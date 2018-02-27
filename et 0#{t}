@@ -1,0 +1,18 @@
+
+[1mFrom:[0m /home/thiago/Área de Trabalho/Thiago/Projetos/centauro/features/support/pages/site.rb @ line 28 Login#btn_cadastrar:
+
+    [1;34m22[0m: [32mdef[0m [1;34mbtn_cadastrar[0m
+    [1;34m23[0m:     btncadastrar.click
+    [1;34m24[0m:     email.set [1;34;4mFaker[0m::[1;34;4mInternet[0m.email
+    [1;34m25[0m:     cep.click
+    [1;34m26[0m:     t = [1;34;4mFaker[0m::[1;34;4mNumber[0m.between([1;34m1000000[0m, [1;34m9999999[0m)
+    [1;34m27[0m:     binding.pry
+ => [1;34m28[0m:     cep.set [31m[1;31m'[0m[31m0#{t}[1;31m'[0m[31m[0m
+    [1;34m29[0m:     btnl.click
+    [1;34m30[0m:     nome.set [1;34;4mFaker[0m::[1;34;4mName[0m.first_name
+    [1;34m31[0m:     sobrenome.set [1;34;4mFaker[0m::[1;34;4mName[0m.last_name
+    [1;34m32[0m:     rg.set [1;34;4mFaker[0m::[1;34;4mNumber[0m.number([1;34m9[0m)
+    [1;34m33[0m:     cpf.set [1;34;4mFaker[0m::[1;34;4mCPF[0m.numeric 
+    [1;34m34[0m:     sleep [1;34m5[0m
+    [1;34m35[0m: [32mend[0m
+
